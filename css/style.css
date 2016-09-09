@@ -1,0 +1,477 @@
+body,ul,li,dl,dt,dd,p,h1,h2,h3,span,input,a,img,header,li,ul{padding:0;margin:0;}
+body,#body .section{font-size:12px;background-color:#fff;font-family: "microsoft yahei";color:#333;}
+a{text-decoration:none;}
+ul{list-style:none;}
+img{border:0;}
+.clearfix:after{display:block;clear:both;height:0;content:"\200B";}
+.clearfix{*zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.w{width: 1000px;margin:0 auto;}
+/*conment*/
+header{
+	background: rgba(255, 255, 255, 1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+
+}
+header h1{
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999px;
+	width: 297px;
+	height: 57px;	
+}
+#menu li{
+	float: left;
+}
+#menu a{
+	display: block;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+}
+
+.list_bg1,.list_bg2,.list_bg3,.list_bg4{
+	background: url(../images/banner-1.jpg) no-repeat 0% 100% / auto 100%;
+	position: relative;
+	height: 668px;
+}
+.list_bg2{
+	background: url(../images/banner-2.jpg) no-repeat 0% 100% / auto 100%;
+
+}
+.list_bg3{
+	background: url(../images/banner-3.jpg) no-repeat 0% 100% / auto 100%;
+}
+.list_bg4{
+	background: url(../images/banner-4.jpg) no-repeat 0% 100% / auto 100%;
+}
+.list_bg1_img1{
+	background: url(../images/banner-1-island.png) no-repeat center;
+	z-index: 2;
+	height: 384px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	opacity: 1;
+	animation: list_bg1 1s;
+}
+.list_bg1_img2{
+	background: url(../images/banner-1-txt-le.png) no-repeat;
+	z-index: 3;
+	height: 108px;
+	width: 100%;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	opacity: 1;
+	animation: aaa 1s;
+}
+.list_bg1_img3{
+	background: url(../images/banner-1-txt-ri.png) no-repeat;
+	z-index: 4;
+	height:221px;
+	width: 100%;
+	position: absolute;
+	left:63%;
+	top: 3%;
+	animation: list_bg1_img3 1s;
+}
+.list_bg1_img4{
+	background: url(../images/banner-1-txt1.png) no-repeat;
+	z-index: 1;
+	height: 201px;
+	position: absolute;
+	width: 100%;
+	top:10%;
+	left:33%;
+	animation: all 1s;
+}
+/**/
+.section_two{
+	background: url(../images/section2.jpg) no-repeat 0% 100% / auto 100%;
+	position: relative;
+}
+.bg_img{
+	background: url(../images/section2-bg.png) no-repeat 0% 100% / auto 100%;
+	animation: bg_img 2s;
+	position: relative;
+}
+@keyframes bg_img{
+	0%{
+		bottom: -150px;
+	}
+	50%{
+		bottom: -105px;
+	}
+	100%{
+		bottom: 0;
+	}
+}
+.yao{
+	position: absolute;
+	top: 15%;
+	left:15%;
+	animation: yao 1s;
+}
+@keyframes yao{
+	0%{
+		transform: scale(0.5,0.5);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+@keyframes all{
+	0%{
+		opacity: 0;
+		left: 0%;
+	}
+	100%{
+		opacity: 1;
+		left: 33%;
+	}
+}
+@keyframes list_bg1{
+	0%{
+		bottom: -200px;
+		opacity: 0;
+	}
+	100%{
+		bottom: 0;
+		opacity: 1;
+	};
+
+
+}@keyframes aaa{
+	0%{
+		top:0%;
+		left: 0%;
+		opacity: 0;
+	}
+	100%{
+		top:20%;
+		left: 20%;
+		opacity: 1;
+	}
+	}
+	@keyframes list_bg1_img3{
+	0%{
+		top:0%;
+		left: 0%;
+		opacity: 0;
+	}
+	100%{
+		top:3%;
+		left:63%;
+		opacity: 1;
+	}
+}
+
+#banners_wrap{
+	position: absolute;
+	top:-13%;
+	right:20%;
+	animation: banners_wrap 1s;
+}
+@keyframes banners_wrap{
+	0%{
+		top: -45%;
+	}
+	100%{
+		top: -13%;
+	}
+}
+/*chajian*/
+.banner{ margin:100px auto; width:298px; height:529px; overflow:hidden; position:relative;}
+.banner .img{ width:5000px; position:absolute; left:0px; top:0;}
+.banner .img li{ float:left;}
+
+.banner .num{ position:absolute; width:100%; bottom:10px; left:0; text-align:center; font-size:0px;}
+.banner .num li{ width:10px;height:10px; background:url(images/1.jpg); border-radius:50%; display:inline-block; margin:0 3px; cursor:pointer;border: 1px solid;}
+.banner .num li.on{ background:url(images/1.jpg);}
+
+.banner .btn{ width:30px; height:50px; background:rgba(0,0,0,0.5); position:absolute; top:50%; margin-top:-25px; cursor:pointer; text-align:center; line-height:50px; color:#fff; font-size:40px; font-family:"宋体"; display:none;}
+.banner:hover .btn{ display:block;}
+
+.banner .btn_l{ left:0;}
+.banner .btn_r{ right:0;}
+/**/
+.section_there{
+	background: url(../images/section3.jpg) no-repeat 0% 100% / auto 100%;
+	position: relative;
+}
+.money{
+	position: absolute;
+	left: 60%;
+	top: 48%;
+	animation: money 3s;
+	animation-delay: 3s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+@keyframes money{
+	0%{
+		opacity: 0.5;
+		top: 58%;
+	}
+	100%{
+		opacity: 1;
+		top: 48%;
+	}
+}
+.there_man_l{
+	position: absolute;
+	left: 40%;
+	top: 43%;
+	animation: there_man_l 2s;
+}
+@keyframes there_man_l{
+	0%{
+		top: 20%;
+		left: 0;
+		opacity: 0.5;
+		transform: scale(0.2,0.2);
+	}
+	50%{
+		top: 30%;
+		left: 0;
+		opacity: 0.8;
+		transform: scale(0.6,0.6);
+	}
+	100%{
+		top: 43%;
+		left: 40%;
+		opacity: 1;
+		transform: scale(1,1);
+	}
+}
+.there_man_rs{
+	position: absolute;
+	right: 25%;
+	top: 43%;
+	z-index: 1;
+	animation: there_man_rs 2s;
+}
+@keyframes there_man_rs{
+	0%{
+		top: 30%;
+		right: 0;
+		opacity: 0.5;
+		transform: scale(0.3,0.3);
+	}
+	50%{
+		top: 30%;
+		right: 0;
+		opacity: 0.8;
+		transform: scale(0.6,0.6);
+	}
+	100%{
+		top: 43%;
+		right: 25%;
+		opacity: 1;
+		transform: scale(1,1);
+	}
+}
+.there_man_txt{
+	position: absolute;
+	left:48%;
+	top:15%;
+	z-index: 0;
+	animation: there_man_txt 1s;
+}
+@keyframes there_man_txt{
+	0%{
+		opacity: 0.5;
+		transform: scale(0.5,0.5);
+	}
+	100%{
+		opacity:1;
+		transform: scale(1,1);
+	}
+}
+.there_man_le{
+	position: absolute;
+	left:35%;
+	top:20%;
+	z-index: 0;
+	animation: there_man_le 2s;
+	animation-delay: 3s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+@keyframes there_man_le{
+	0%{
+		opacity: 0.5;
+		top: 30%;
+	}
+	100%{
+		opacity: 1;
+		top: 20%;
+	}
+}
+.there_man_ri{
+	position: absolute;
+	left:70%;
+	top:28%;
+	z-index: 0;
+	opacity: 0;
+	animation: there_man_ri 2s;
+	animation-delay: 3s;
+	animation-fill-mode:forwards;
+}
+@keyframes there_man_ri{
+	0%{
+		opacity: 0.5;
+		top: 40%;
+	}
+	100%{
+		opacity: 1;
+		top: 28%;
+	}
+}
+.section div{display:none;}
+.section.active div{display:block;}
+.section_four{
+	background: url(../images/section4.jpg) no-repeat 0% 100% / auto 100%;
+	position: relative;
+	width: 100%;
+}
+.section4-bg{
+	position: absolute;
+	top: 26%;
+	left: 30%;
+	animation: section4-bg 3s;
+}
+@keyframes section4-bg{
+	0%{
+		opacity: 0.5;
+		top: 46%;
+	}
+	50%{
+		opacity: 1;
+		top: 26%;
+	}
+}
+.section4_phone{
+	position: absolute;
+	right:-7%;
+	top:-8%;
+	animation: section4_phone 1s;
+}
+@keyframes section4_phone{
+	0%{
+		opacity: 0.5;
+		top: 18%;
+	}
+	100%{
+		opacity: 1;
+		top: -8%;
+	}
+}
+.section4_txt{
+	position: absolute;
+	left:14%;
+	top: 10%;
+	animation: section4_txt 2s;
+}
+@keyframes section4_txt{
+	0%{
+		transform: scale(0.5,0.5);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+.boxSlide ul:before{
+	    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    content: '\20';
+    display: block;
+    border-bottom: solid 1px #28b1f3;
+    z-index: 0;
+}
+.boxSlide li{
+	position: relative;
+    height: 46px;
+    line-height: 46px;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    color: #28b1f3;
+    border: solid 1px #28b1f3;
+    margin: 0 5px;
+    border-radius: 3px;
+    width: 150px;
+    text-align: center;
+    z-index: 66;
+}
+.boxSlide{
+	position: absolute;
+	top:10%;
+	width: 100%;
+	text-align: center;
+
+}
+.section_five{
+	position: relative;
+}
+.section_five .on{
+	background: #28b1f3;
+    color: #fff;
+}
+li.on:before{
+	position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    content: '\20';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #28b1f3;
+}
+.boxSlide_list{
+	position: absolute;
+	top: 20%;
+	left: 15%;
+}
+.boxSlide_list li{
+	display: none;
+}
+.boxSlide_list .show{
+	display: block;
+}
+footer{
+	background: #eee;
+	color: #666;
+	padding:5px 0;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+
+	animation: footer 2s;
+}
+@keyframes footer {
+	0%{
+		bottom: -10%
+	}
+	100%{
+		bottom: 0;
+	}
+}
